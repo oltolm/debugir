@@ -147,7 +147,7 @@ public:
       report_fatal_error("DebugIR pass supports only a signle compile unit per "
                          "Module.");
     createCompileUnit(Finder.compile_unit_count() == 1
-                          ? (DICompileUnit *)*Finder.compile_units().begin()
+                          ? *Finder.compile_units().begin()
                           : nullptr);
   }
 

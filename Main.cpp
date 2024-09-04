@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
     });
 
     ModulePassManager MPM =
-        PB.buildPerModuleDefaultPipeline(OptimizationLevel::O1);
+        PB.buildPerModuleDefaultPipeline(OptimizationLevel::O0);
     MPM.run(*M, MAM);
   }
 
